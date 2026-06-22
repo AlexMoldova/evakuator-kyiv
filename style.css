@@ -235,3 +235,20 @@ ul{list-style:none}
 .contact-social .ss-whatsapp{background:#25d366}
 .contact-social .ss-instagram{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
 .contact-social .ss-phone{background:var(--accent);color:#000}
+
+/* FIX: floating social buttons overlap on mobile */
+.floating-buttons,
+.floating-social,
+[class*="float"] {
+ z-index: 10;
+ right: 8px !important;
+}
+
+.contacts-card,
+.contact-card,
+[class*="contact"] .card,
+section#contacts .card {
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+}
