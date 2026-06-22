@@ -274,3 +274,14 @@ section#contacts .card {
   .contact-social{justify-content:center}
   .contact-card img{min-height:200px;object-fit:cover}
 }
+
+/* Push footer up on mobile so content clears floating buttons */
+.footer {
+  padding-bottom: 100px;
+}
+
+@media(min-width:769px) {
+  .footer {
+    padding-bottom: 48px;
+  }
+}
