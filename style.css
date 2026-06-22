@@ -256,3 +256,21 @@ section#contacts .card {
  z-index: 1;
  overflow: hidden;
 }
+
+/* ── CONTACTS FIX: центрування та мобільна адаптація ────────── */
+.contact-card{background:var(--bg);border-radius:16px;padding:32px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.contact-social{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.contact-social a{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:12px;font-size:13px;font-weight:600;text-decoration:none;transition:all .2s}
+.ss-phone{background:var(--accent);color:var(--bg)}
+.ss-viber{background:#7360f2;color:#fff}
+.ss-whatsapp{background:#25d366;color:#fff}
+.ss-telegram{background:#2aabee;color:#fff}
+.ss-instagram{background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);color:#fff}
+.contact-social a:hover{transform:translateY(-2px);filter:brightness(1.1)}
+
+@media(max-width:768px){
+  .contact-grid{grid-template-columns:1fr!important}
+  .contact-card{padding:24px;text-align:center}
+  .contact-social{justify-content:center}
+  .contact-card img{min-height:200px;object-fit:cover}
+}
