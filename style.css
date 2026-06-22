@@ -189,6 +189,10 @@ ul{list-style:none}
   .nav-links{display:none}
   .hero-photo-wrap{max-width:100%}
   .hero{padding-left:20px;padding-right:20px}
+  .nav-inner{padding:0 12px;gap:8px}
+  .nav-cta{padding:8px 14px;font-size:13px;gap:4px}
+  .logo{font-size:16px;gap:6px}
+  .logo-mark{width:24px;height:24px;font-size:12px}
 }
 @media(max-width:600px){
   .section{padding:48px 16px}
